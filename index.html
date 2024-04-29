@@ -42,7 +42,12 @@
 
     if ( bigCats == "Yes" || bigCats == "yes" || bigCats == "YES"){
       show_image("https://www.purina.co.nz/sites/default/files/styles/ttt_image_510/public/2021-02/CAT%20BREED%20Hero%20Mobile_0010_Scottish_fold.jpg?itok=jQVhy4jY",150,115, cat);   
+      document.getElementById("result").innerText = "CATS";
       return;
+    }
+    else{
+      document.getElementById("result").innerText = "Must type yes or YES or Yes";
+      
     }
     
       
