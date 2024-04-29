@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Cat Image</title>
+</head>
+<body>
+<h1>Show Cat Image</h1>
+<p>To see a picture of a cat, please type "yes" in the box below:</p>
+<input type="text" id="userInput">
+<button onclick="showCatImage()">Submit</button>
 
-  <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Muck Around stuff</title>
-  </head>
-
-  <body>
-    
-    <h1>This is a muck around for cats</h1>
-    <p> type yes for cats ay? </p>
-    <label>Cats</label>
-    <input type="text" id="BIGCATS" >
-    <button onClick="CatImage()">Generate</button>
-    <div id="catImageContainer" style="display: none;">
+<div id="catImageContainer" style="display: none;">
     <img id="catImage" src="" alt="Cat Image">
+</div>
 
-  <script>
-  
-    
-  function CatImage() {
-
-    var userInput = document.getElementById("BIGCATS").value.toLowerCase();
+<script>
+function showCatImage() {
+    var userInput = document.getElementById("userInput").value.toLowerCase();
     
     if (userInput === "yes") {
-        document.getElementById("catImage").src = "https://www.purina.co.nz/sites/default/files/styles/ttt_image_510/public/2021-02/CAT%20BREED%20Hero%20Mobile_0010_Scottish_fold.jpg?itok=jQVhy4jY"; // Example cat image URL
+        document.getElementById("catImage").src = "https://placekitten.com/200/300"; // Example cat image URL
         document.getElementById("catImageContainer").style.display = "block";
-    }
-    else {
+    } else {
         alert("You must type 'yes' to see the cat image.");
     }
-    }
-    
-      
-    
-  }
-    
-  </script>
-  </body>
+}
+</script>
+</body>
 </html>
