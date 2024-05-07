@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<link rel="stylesheet" href="Style2.css" type="text/css" />
-
     
-<title>catPics</title>
+<meta charset="UTF-8">    
+<title>Class 10 Rubric for DT</title>
+
+<link rel="stylesheet" href="Stylemaster.css" >
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src= "excel-table.js"> </script>
 </head>
 <body>
-<h1>Show Cat stuff for yes?</h1>
-<p>To see a picture of a cat, type "yes" in the box below:</p>
-<input type="text" id="userInput">
-<button onclick="showCatImage()">CATS</button>
+<!-- file picker -->
+    <input type="file" id="demoA" accept=".xls, .xlsx">
 
-<div id="catImageContainer" style="display: none;">
-    <img id="catImage" src="" alt="Cat Image">
-</div>
 
-<script>
-function showCatImage() {
-    var userInput = document.getElementById("userInput").value.toLowerCase();
-    
-    if (userInput === "yes") {
-        document.getElementById("catImage").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp2se8a7AJNGTfyaIenHFbV8OAG6splUcXgojP9ALiPg&s"; // Example cat image URL
-        document.getElementById("catImageContainer").style.display = "block";
-    } else {
-        alert("You must type 'yes' to see the cat image.");
-    }
-}
-</script>
+<!-- empty table-->
+    <table id="demoB"> </table>table>
+
 </body>
 </html>
