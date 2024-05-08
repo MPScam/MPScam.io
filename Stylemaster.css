@@ -45,7 +45,10 @@ p {
   font-size: 12px;
   background: linear-gradient(90, #fed700, #21b0fe);
 }
-
+table {
+background-image: linear-gradient(to bottom, #eca0ff, #94c6ff, #00e3ff, #00f6ff, #84ffc9);
+  
+}
 body {
-  background: linear-gradient(0, #eca0ff, #84ffc9);
+  background-image: linear-gradient(to top, #eca0ff, #94c6ff, #00e3ff, #00f6ff, #84ffc9);
 }
